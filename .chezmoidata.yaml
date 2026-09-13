@@ -1,0 +1,7 @@
+apps:
+  arch:
+    - bitwarden
+  aur:
+    - brave-bin
+  remove:
+    - chromium

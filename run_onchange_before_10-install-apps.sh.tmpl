@@ -1,0 +1,41 @@
+#!/bin/bash
+set -euo pipefail
+
+if ! command -v omarchy >/dev/null 2>&1; then
+  echo "This dotfiles repository requires Omarchy." >&2
+  exit 1
+fi
+
+arch_packages=(
+{{- range .apps.arch }}
+  {{ printf "%q" . }}
+{{- end }}
+)
+
+aur_packages=(
+{{- range .apps.aur }}
+  {{ printf "%q" . }}
+{{- end }}
+)
+
+removed_packages=(
+{{- range .apps.remove }}
+  {{ printf "%q" . }}
+{{- end }}
+)
+
+if (( ${#arch_packages[@]} )); then
+  omarchy pkg add "${arch_packages[@]}"
+fi
+
+if (( ${#aur_packages[@]} )); then
+  omarchy pkg aur add "${aur_packages[@]}"
+fi
+
+if (( ${#removed_packages[@]} )); then
+  omarchy pkg drop "${removed_packages[@]}"
+fi
+
+if pacman -Qq brave-bin >/dev/null 2>&1; then
+  xdg-settings set default-web-browser brave-browser.desktop
+fi
