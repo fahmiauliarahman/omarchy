@@ -24,6 +24,12 @@ removed_packages=(
 {{- end }}
 )
 
+removed_webapps=(
+{{- range .webapps.remove }}
+  {{ printf "%q" . }}
+{{- end }}
+)
+
 if (( ${#arch_packages[@]} )); then
   omarchy pkg add "${arch_packages[@]}"
 fi
@@ -36,6 +42,10 @@ if (( ${#removed_packages[@]} )); then
   omarchy pkg drop "${removed_packages[@]}"
 fi
 
+for webapp in "${removed_webapps[@]}"; do
+  omarchy webapp remove "$webapp"
+done
+
 if pacman -Qq brave-bin >/dev/null 2>&1; then
-  xdg-settings set default-web-browser brave-browser.desktop
+  env -u BROWSER xdg-settings set default-web-browser brave-browser.desktop
 fi

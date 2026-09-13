@@ -5,3 +5,13 @@ apps:
     - brave-bin
   remove:
     - chromium
+    - libreoffice-fresh
+webapps:
+  remove:
+    - Discord
+    - Google Contacts
+    - Google Maps
+    - Google Messages
+    - Google Photos
+    - HEY
+    - YouTube
