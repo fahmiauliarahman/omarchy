@@ -23,6 +23,30 @@
 -- Disable a default binding without replacing it.
 -- hl.unbind("SUPER + SHIFT + B")
 
+-- Remove default bindings for web apps removed in .chezmoidata.yaml.
+-- Google Maps
+hl.unbind("SUPER + SHIFT + S")
+-- Google Messages
+hl.unbind("SUPER + SHIFT + CTRL + G")
+-- Google Photos
+hl.unbind("SUPER + SHIFT + P")
+-- HEY Calendar
+hl.unbind("SUPER + SHIFT + C")
+-- HEY Email
+hl.unbind("SUPER + SHIFT + E")
+-- HEY New Email
+hl.unbind("SUPER + SHIFT + ALT + E")
+-- X
+hl.unbind("SUPER + SHIFT + X")
+-- X Post
+hl.unbind("SUPER + SHIFT + ALT + X")
+-- YouTube
+hl.unbind("SUPER + SHIFT + Y")
+-- Tmux terminal
+hl.unbind("SUPER + ALT + RETURN")
+-- Tmux keybindings
+hl.unbind("SUPER + ALT + K")
+
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
