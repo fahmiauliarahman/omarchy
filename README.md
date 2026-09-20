@@ -27,6 +27,20 @@ chezmoi init --apply fahmiauliarahman/omarchy
 The initial apply can request your sudo password while installing or removing
 packages. Log out and back in if every desktop setting has not refreshed.
 
+The bar clock is provided by the `fahmi.clock` plugin and is configured in
+`dot_config/omarchy/shell.json` as:
+
+```json
+"format": "ddd dd/MM/yyyy HH:mm:ss"
+```
+
+This renders as `Sun 20/09/2026 14:05:09`. Apply it on an existing device with:
+
+```bash
+chezmoi apply ~/.config/omarchy/shell.json
+omarchy restart shell
+```
+
 ## Save configuration changes
 
 After changing a managed configuration file, update chezmoi's source state:
