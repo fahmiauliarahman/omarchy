@@ -1,8 +1,10 @@
 apps:
   arch:
     - bitwarden
+    - dbeaver
   aur:
     - brave-bin
+    - redisinsight-bin
   remove:
     - chromium
     - libreoffice-fresh
