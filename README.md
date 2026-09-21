@@ -75,7 +75,7 @@ apps:
   arch:
     - bitwarden
   aur:
-    - brave-bin
+    - bruno-bin
   remove:
     - chromium
 ```

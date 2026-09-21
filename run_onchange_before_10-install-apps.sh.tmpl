@@ -45,7 +45,3 @@ fi
 for webapp in "${removed_webapps[@]}"; do
   omarchy webapp remove "$webapp"
 done
-
-if pacman -Qq brave-bin >/dev/null 2>&1; then
-  env -u BROWSER xdg-settings set default-web-browser brave-browser.desktop
-fi

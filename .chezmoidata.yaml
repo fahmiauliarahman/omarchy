@@ -6,7 +6,6 @@ apps:
     - vivaldi
     - vivaldi-ffmpeg-codecs
   aur:
-    - brave-bin
     - bruno-bin
     - redisinsight-bin
   remove:
