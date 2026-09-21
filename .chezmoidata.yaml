@@ -2,6 +2,7 @@ apps:
   arch:
     - bitwarden
     - dbeaver
+    - rustdesk
     - vivaldi
     - vivaldi-ffmpeg-codecs
   aur:
