@@ -4,6 +4,7 @@ apps:
     - dbeaver
   aur:
     - brave-bin
+    - bruno-bin
     - redisinsight-bin
   remove:
     - chromium
