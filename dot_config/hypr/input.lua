@@ -10,6 +10,9 @@ hl.env("XKB_CONFIG_EXTRA_PATH", os.getenv("HOME") .. "/.config/xkb")
 hl.config({
   input = {
     kb_layout = "ralt_esc",
+    touchpad = {
+      natural_scroll = true,
+    },
   },
 })
 

@@ -2,6 +2,8 @@ apps:
   arch:
     - bitwarden
     - dbeaver
+    - vivaldi
+    - vivaldi-ffmpeg-codecs
   aur:
     - brave-bin
     - bruno-bin
