@@ -3,10 +3,9 @@ apps:
     - bitwarden
     - dbeaver
     - rustdesk
-    - vivaldi
-    - vivaldi-ffmpeg-codecs
   aur:
     - bruno-bin
+    - helium-browser-bin
     - redisinsight-bin
   remove:
     - chromium
