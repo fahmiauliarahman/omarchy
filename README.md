@@ -7,6 +7,7 @@ This repository restores:
 
 - Hyprland configuration
 - Omarchy shell, menu, hooks, branding, and custom plugins
+- Linuxbrew
 - Arch and AUR applications listed in `.chezmoidata.yaml`
 - Removal of unwanted packages listed in `.chezmoidata.yaml`
 
