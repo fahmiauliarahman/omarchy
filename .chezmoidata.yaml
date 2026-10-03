@@ -3,6 +3,7 @@ apps:
     - bitwarden
     - dbeaver
     - rustdesk
+    - ghostty
   aur:
     - bruno-bin
     - helium-browser-bin
@@ -12,8 +13,19 @@ apps:
     - libreoffice-fresh
     - tmux
     - foot
+    - xournalpp
+    - pinta
+    - omawrite
+    - omacalc
+    - omacut
+    - tensaku
+    - kdenlive
+    - cliamp
+    - moonlight-qt
+    - system-config-printer
 webapps:
   remove:
+    - Basecamp
     - Discord
     - Google Contacts
     - Google Maps
