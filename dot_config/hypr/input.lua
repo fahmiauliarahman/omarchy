@@ -3,13 +3,8 @@
 
 -- Keyboard layout and options.
 
--- The physical Escape key is broken, so Right Alt sends Escape instead.
--- Custom layout "ralt_esc" (US layout + <RALT> -> Escape) lives in
--- ~/.config/xkb/symbols/ and is found via XKB_CONFIG_EXTRA_PATH.
-hl.env("XKB_CONFIG_EXTRA_PATH", os.getenv("HOME") .. "/.config/xkb")
 hl.config({
   input = {
-    kb_layout = "ralt_esc",
     touchpad = {
       natural_scroll = true,
     },
