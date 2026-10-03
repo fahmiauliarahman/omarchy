@@ -4,6 +4,7 @@ apps:
     - dbeaver
     - rustdesk
     - ghostty
+    - fish
   aur:
     - bruno-bin
     - helium-browser-bin
