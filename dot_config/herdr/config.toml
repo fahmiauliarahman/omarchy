@@ -1,0 +1,37 @@
+onboarding = false
+[keys]
+# Use Alt+B as Herdr's prefix, leaving Ctrl+B available to Neovim.
+prefix = "alt+b"
+
+[theme]
+# Match the active Omarchy theme (the current monochrome palette).
+name = "terminal"
+auto_switch = false
+
+[theme.custom]
+accent = "#798186"
+panel_bg = "#101315"
+surface0 = "#1B1E20"
+surface1 = "#343D41"
+surface_dim = "#0C0E10"
+overlay0 = "#8B8D8E"
+overlay1 = "#A5AEB4"
+text = "#CACCCC"
+subtext0 = "#8B8D8E"
+mauve = "#AEAEAE"
+green = "#9FA5A9"
+yellow = "#D9DBDC"
+red = "#DE6145"
+blue = "#798186"
+teal = "#707070"
+peach = "#C9C2B4"
+
+[ui]
+agent_panel_sort = "spaces"
+
+show_agent_labels_on_pane_borders = true
+[ui.toast]
+delivery = "off"
+
+[experimental]
+switch_ascii_input_source_in_prefix = true

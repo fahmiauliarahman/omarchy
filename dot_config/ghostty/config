@@ -1,0 +1,26 @@
+# --- Transparency ---
+background-opacity = 0.8
+background-blur-radius = 10
+
+# --- Typography ---
+# Assumes JetBrains Mono Nerd Font is installed.
+font-family = "JetBrainsMono Nerd Font"
+font-size = 12
+font-variation = wght=500
+font-feature = -calt
+font-feature = -liga
+
+# --- Window Styling & Minimal Chrome ---
+window-padding-x = 16
+window-padding-y = 14
+window-inherit-working-directory = true
+
+# --- Cursor & Polish ---
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+
+# --- Line spacing (relaxed for long terminal sessions) ---
+adjust-cell-height = 50%
+
+# Herdr handles Alt+B directly as its configured prefix.
