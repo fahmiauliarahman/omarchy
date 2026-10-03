@@ -11,6 +11,7 @@ font-feature = -calt
 font-feature = -liga
 
 # --- Window Styling & Minimal Chrome ---
+command = /usr/bin/fish
 window-padding-x = 16
 window-padding-y = 14
 window-inherit-working-directory = true
