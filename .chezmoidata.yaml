@@ -3,17 +3,18 @@ apps:
     - bitwarden
     - dbeaver
     - rustdesk
-    - ghostty
+    - foot
     - fish
   aur:
     - bruno-bin
     - helium-browser-bin
     - redisinsight-bin
+    - termius
   remove:
     - chromium
     - libreoffice-fresh
     - tmux
-    - foot
+    - ghostty
     - xournalpp
     - pinta
     - omawrite
