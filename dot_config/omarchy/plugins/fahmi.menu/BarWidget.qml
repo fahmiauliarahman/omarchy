@@ -3,7 +3,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "omarchy.menu"
+  moduleName: "fahmi.menu"
 
   implicitWidth: button.implicitWidth
   implicitHeight: button.implicitHeight
