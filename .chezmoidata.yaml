@@ -25,6 +25,8 @@ apps:
     - cliamp
     - moonlight-qt
     - system-config-printer
+    - grim
+    - slurp
 webapps:
   remove:
     - Basecamp

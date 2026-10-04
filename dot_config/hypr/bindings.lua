@@ -47,7 +47,10 @@ hl.unbind("SUPER + ALT + RETURN")
 -- Tmux keybindings
 hl.unbind("SUPER + ALT + K")
 
+-- Replace Omarchy's default screenshot tool with Flameshot.
+hl.unbind("PRINT")
+o.bind("PRINT", "Flameshot screenshot", "env XDG_CURRENT_DESKTOP=Hyprland:sway flameshot gui")
+
 -- Logitech MX Keys examples:
--- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
