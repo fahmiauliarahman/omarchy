@@ -13,7 +13,6 @@ This repository restores:
 
 - Hyprland configuration
 - Omarchy shell, menu, hooks, branding, and custom plugins
-- Linuxbrew
 - Arch and AUR applications listed in `.chezmoidata.yaml`
 - Removal of unwanted packages listed in `.chezmoidata.yaml`
 
@@ -32,7 +31,7 @@ omarchy pkg add chezmoi
 chezmoi init --apply fahmiauliarahman/omarchy
 ```
 
-The initial apply can request your sudo password while installing Linuxbrew and changing packages.
+The initial apply can request your sudo password while changing packages.
 Log out and back in if every desktop setting has not refreshed.
 
 Before changing configuration on any device, pull and apply the latest version:

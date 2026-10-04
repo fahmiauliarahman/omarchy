@@ -70,10 +70,10 @@ function git-ssh
 end
 zoxide init fish | source
 
-# PHP version switcher for Fish using mise.
+# PHP version switcher for Fish using mise's asdf backend.
 if command -q mise
     function __installed_php_versions --description "List installed PHP major.minor versions"
-        mise ls --installed php --json 2>/dev/null \
+        mise ls --installed asdf:mise-plugins/asdf-php --json 2>/dev/null \
             | string match -arg '"version": "([0-9]+\.[0-9]+)[^"]*"' \
             | sort -Vu
     end
@@ -95,7 +95,7 @@ if command -q mise
             return 1
         end
 
-        if not mise use --global "php@$requested_version"
+        if not mise use --global --remove php "asdf:mise-plugins/asdf-php@$requested_version"
             echo "Failed to switch to PHP $requested_version."
             return 1
         end
@@ -111,7 +111,7 @@ if command -q mise
             if test (count $versions) -gt 0
                 echo "Installed: "(string join ", " $versions)
             end
-            echo -e "\nTo see all available versions: mise ls-remote php"
+            echo -e "\nTo see all available versions: mise ls-remote asdf:mise-plugins/asdf-php"
             return 1
         end
 
@@ -139,8 +139,8 @@ if command -q mise
             end
         end
 
-        echo "Installing PHP $requested_version via mise..."
-        if not mise use --global "php@$requested_version"
+        echo "Installing PHP $requested_version via mise's asdf backend..."
+        if not mise use --global --remove php "asdf:mise-plugins/asdf-php@$requested_version"
             echo "Failed to install PHP $requested_version."
             return 1
         end
