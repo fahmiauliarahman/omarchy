@@ -3,6 +3,12 @@
 Personal Omarchy Quattro configuration managed with
 [chezmoi](https://www.chezmoi.io/).
 
+
+Connect to hidden wifi network
+```sh
+nmcli device wifi connect "YOUR_SSID" hidden yes
+```
+
 This repository restores:
 
 - Hyprland configuration
