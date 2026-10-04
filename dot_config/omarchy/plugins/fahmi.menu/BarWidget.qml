@@ -3,7 +3,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "fahmi.menu"
+  moduleName: "omarchy.menu"
 
   implicitWidth: button.implicitWidth
   implicitHeight: button.implicitHeight
@@ -13,6 +13,8 @@ BarWidget {
     anchors.fill: parent
     bar: root.bar
     text: "\uf303"
+    fontFamily: "JetBrainsMono NF"
+    tooltipText: "Menu"
     horizontalMargin: 7.5
     onPressed: function(button) {
       if (!root.bar) return
