@@ -1,6 +1,5 @@
-
 [Default Applications]
-x-scheme-handler/mailto=HEY.desktop
+x-scheme-handler/mailto=helium.desktop
 x-scheme-handler/bruno=bruno.desktop
 text/html=helium.desktop
 x-scheme-handler/http=helium.desktop
