@@ -23,7 +23,7 @@ source-path`:
 ```yaml
 apps:
   arch:
-    - bitwarden
+    - foot
   aur:
     - bruno-bin
   remove:

@@ -163,6 +163,3 @@ set -gx GLAB_SKIP_TLS_VERIFY true
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
-
-# bitwarden ssh agent
-set -gx SSH_AUTH_SOCK "$HOME/.bitwarden-ssh-agent.sock"

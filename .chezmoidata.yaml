@@ -1,21 +1,21 @@
 apps:
   arch:
-    - bitwarden
-    - dbeaver
     - rustdesk
     - foot
     - fish
+    - xournalpp
   aur:
     - bruno-bin
     - helium-browser-bin
     - redisinsight-bin
     - termius
   remove:
+    - bitwarden
+    - dbeaver
     - chromium
     - libreoffice-fresh
     - tmux
     - ghostty
-    - xournalpp
     - pinta
     - omawrite
     - omacalc
