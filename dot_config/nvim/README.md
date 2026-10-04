@@ -1,6 +1,6 @@
 # Neovim Configuration
 
-A [LazyVim](https://www.lazyvim.org/)-based Neovim setup, managed with GNU Stow. It layers a
+A [LazyVim](https://www.lazyvim.org/)-based Neovim setup, managed with chezmoi. It layers a
 curated set of LazyVim's official language extras on top of the framework defaults, plus a
 Catppuccin theme and a handful of ergonomic keymaps.
 
@@ -36,10 +36,10 @@ Catppuccin theme and a handful of ergonomic keymaps.
 
 ## Installation
 
-From the dotfiles repository:
+Apply the configuration through chezmoi:
 
 ```bash
-stow -R -t ~ nvim
+chezmoi apply ~/.config/nvim
 ```
 
 Open Neovim and let lazy.nvim install the plugins:
