@@ -30,6 +30,9 @@ removed_webapps=(
 {{- end }}
 )
 
+{{ range .webapps.install }}omarchy webapp install {{ printf "%q" .name }} {{ printf "%q" .url }} {{ printf "%q" .icon }}
+{{ end }}
+
 flameshot_version="12.1.0-6"
 flameshot_url="https://archive.archlinux.org/packages/f/flameshot/flameshot-${flameshot_version}-x86_64.pkg.tar.zst"
 

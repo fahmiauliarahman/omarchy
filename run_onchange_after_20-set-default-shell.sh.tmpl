@@ -1,10 +1,10 @@
 #!/bin/sh
 set -eu
 
-shell_path="/bin/bash"
+shell_path="/usr/bin/fish"
 
 if [ ! -x "$shell_path" ]; then
-  echo "Bash is not installed; leaving the login shell unchanged." >&2
+  echo "Fish is not installed; leaving the login shell unchanged." >&2
   exit 0
 fi
 

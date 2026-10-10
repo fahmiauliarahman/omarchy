@@ -18,7 +18,7 @@ This is a personal configuration, not an Omarchy installer. Omarchy must
 already be installed. Review [`.chezmoidata.yaml`](.chezmoidata.yaml) and the
 [`run_*` scripts](run_onchange_before_10-install-apps.sh.tmpl) before applying:
 the setup installs and removes packages, may ask for `sudo`, and changes the
-login shell back to Bash.
+login shell to Fish.
 
 ## Install
 

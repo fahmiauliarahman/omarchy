@@ -47,6 +47,10 @@ hl.unbind("SUPER + ALT + RETURN")
 -- Tmux keybindings
 hl.unbind("SUPER + ALT + K")
 
+-- Omawrite was removed; use its shortcut for WhatsApp.
+hl.unbind("SUPER + SHIFT + W")
+o.bind("SUPER + SHIFT + W", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
+
 -- Replace Omarchy's default screenshot tool with Flameshot.
 hl.unbind("PRINT")
 o.bind("PRINT", "Flameshot screenshot", "env XDG_CURRENT_DESKTOP=Hyprland:sway flameshot gui")
