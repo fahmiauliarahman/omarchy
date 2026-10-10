@@ -98,8 +98,8 @@
         {
           "type": "dart",
           "style": "plain",
-          "foreground": "p:blue",
-          "template": " {{ .Full }}  "
+          "foreground": "#40C4FF",
+          "template": " {{ .Full }}  "
         },
         {
           "type": "time",
