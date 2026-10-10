@@ -12,6 +12,9 @@ if test -f $omarchy_colors
     set -l red (__omarchy_color bright_red $omarchy_colors)
     set -l green (__omarchy_color green $omarchy_colors)
     set -l yellow (__omarchy_color yellow $omarchy_colors)
+    set -l blue (__omarchy_color blue $omarchy_colors)
+    set -l cyan (__omarchy_color cyan $omarchy_colors)
+    set -l magenta (__omarchy_color magenta $omarchy_colors)
 
     set -g fish_color_command $accent
     set -g fish_color_keyword $accent
@@ -31,6 +34,11 @@ if test -f $omarchy_colors
     set -gx OMARCHY_POSH_FOREGROUND $foreground
     set -gx OMARCHY_POSH_RED $red
     set -gx OMARCHY_POSH_YELLOW $yellow
+    set -gx OMARCHY_POSH_GREEN $green
+    set -gx OMARCHY_POSH_BLUE $blue
+    set -gx OMARCHY_POSH_CYAN $cyan
+    set -gx OMARCHY_POSH_MAGENTA $magenta
+    set -gx OMARCHY_POSH_MUTED $muted
 
     functions -e __omarchy_color
 end
