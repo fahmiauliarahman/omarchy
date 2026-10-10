@@ -35,7 +35,8 @@
           "type": "git",
           "style": "plain",
           "foreground": "p:accent",
-          "template": " {{ .HEAD }}{{ if .BranchStatus }} <p:cyan>{{ .BranchStatus }}</>{{ end }}{{ if .Working.Changed }} <p:yellow> {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }} <p:green> {{ .Staging.String }}</>{{ end }}  "
+          "template": "{{ if .UpstreamIcon }}{{ .UpstreamIcon }}{{ else }}{{ end }} {{ .HEAD }}{{ if .BranchStatus }} <p:cyan>{{ .BranchStatus }}</>{{ end }}{{ if .Working.Changed }} <p:yellow> {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }} <p:green> {{ .Staging.String }}</>{{ end }}  ",
+          "options": { "git_icon": "" }
         },
         {
           "type": "executiontime",
