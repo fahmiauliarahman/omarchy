@@ -4,6 +4,7 @@ apps:
     - foot
     - fish
     - xournalpp
+    - grim
   aur:
     - bruno-bin
     - helium-browser-bin
@@ -25,8 +26,6 @@ apps:
     - cliamp
     - moonlight-qt
     - system-config-printer
-    - grim
-    - slurp
 webapps:
   install:
     - name: WhatsApp

@@ -51,9 +51,13 @@ hl.unbind("SUPER + ALT + K")
 hl.unbind("SUPER + SHIFT + W")
 o.bind("SUPER + SHIFT + W", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
 
+-- Capture a region with Flameshot.
+hl.unbind("SUPER + SHIFT + code:18")
+o.bind("SUPER + SHIFT + 9", "Flameshot screenshot", "env XDG_CURRENT_DESKTOP=sway flameshot gui")
+
 -- Replace Omarchy's default screenshot tool with Flameshot.
 hl.unbind("PRINT")
-o.bind("PRINT", "Flameshot screenshot", "env XDG_CURRENT_DESKTOP=Hyprland:sway flameshot gui")
+o.bind("PRINT", "Flameshot screenshot", "env XDG_CURRENT_DESKTOP=sway flameshot gui")
 
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
