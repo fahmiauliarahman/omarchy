@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
+  "palette": {
+    "accent": "{{ .Env.OMARCHY_POSH_ACCENT | default \"cyan\" }}",
+    "foreground": "{{ .Env.OMARCHY_POSH_FOREGROUND | default \"white\" }}",
+    "red": "{{ .Env.OMARCHY_POSH_RED | default \"red\" }}",
+    "yellow": "{{ .Env.OMARCHY_POSH_YELLOW | default \"yellow\" }}"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "p:foreground",
+          "template": "{{ .Path }} "
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "p:accent",
+          "template": "{{ .HEAD }}{{ if or .Working.Changed .Staging.Changed }} <p:yellow>*</>{{ end }} "
+        },
+        {
+          "type": "status",
+          "style": "plain",
+          "foreground": "p:red",
+          "template": "{{ .String }} "
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:accent",
+          "template": "> "
+        }
+      ]
+    }
+  ]
+}

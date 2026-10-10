@@ -1,4 +1,4 @@
-# Keep Fish syntax highlighting and Tide aligned with Omarchy's active theme.
+# Keep Fish syntax highlighting and Oh My Posh aligned with Omarchy's active theme.
 set -l omarchy_colors "$HOME/.local/state/omarchy/current/theme/colors.toml"
 
 if test -f $omarchy_colors
@@ -12,7 +12,6 @@ if test -f $omarchy_colors
     set -l red (__omarchy_color bright_red $omarchy_colors)
     set -l green (__omarchy_color green $omarchy_colors)
     set -l yellow (__omarchy_color yellow $omarchy_colors)
-    set -l blue (__omarchy_color blue $omarchy_colors)
 
     set -g fish_color_command $accent
     set -g fish_color_keyword $accent
@@ -28,20 +27,10 @@ if test -f $omarchy_colors
     set -g fish_color_status $red
     set -g fish_color_user $green
 
-    set -g tide_character_color $accent
-    set -g tide_character_color_failure $red
-    set -g tide_git_color_branch $accent
-    set -g tide_git_color_dirty $yellow
-    set -g tide_git_color_staged $green
-    set -g tide_git_color_untracked $yellow
-    set -g tide_git_color_upstream $blue
-    set -g tide_jobs_color $yellow
-    set -g tide_pwd_color_anchors $accent
-    set -g tide_pwd_color_dirs $foreground
-    set -g tide_pwd_color_truncated_dirs $muted
-    set -g tide_prompt_color_frame_and_connection $muted
-    set -g tide_prompt_color_separator_same_color $muted
-    set -g tide_status_color $green
+    set -gx OMARCHY_POSH_ACCENT $accent
+    set -gx OMARCHY_POSH_FOREGROUND $foreground
+    set -gx OMARCHY_POSH_RED $red
+    set -gx OMARCHY_POSH_YELLOW $yellow
 
     functions -e __omarchy_color
 end

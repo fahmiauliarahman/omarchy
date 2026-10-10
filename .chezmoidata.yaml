@@ -8,6 +8,7 @@ apps:
   aur:
     - bruno-bin
     - helium-browser-bin
+    - oh-my-posh-bin
     - redisinsight-bin
     - termius
   remove:

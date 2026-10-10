@@ -4,6 +4,10 @@ fish_add_path /usr/local/bin ~/.local/bin
 if status is-interactive
     set -g fish_greeting
 
+    if command -q oh-my-posh
+        oh-my-posh init fish --config ~/.config/ohmyposh/omarchy.omp.json | source
+    end
+
     # Only initialize mise if we aren't ALREADY in a Poetry shell
     if not set -q VIRTUAL_ENV
         mise activate fish | source
